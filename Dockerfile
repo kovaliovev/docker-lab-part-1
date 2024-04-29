@@ -6,7 +6,7 @@ COPY . .
 
 RUN python -m venv ./.venv
 
-RUN . ./.venv/bin/acticate
+RUN . ./.venv/bin/activate
 
 RUN pip install -r requirements/requirements.txt
 

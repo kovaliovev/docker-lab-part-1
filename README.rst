@@ -23,7 +23,7 @@ dependencies:
 
 .. code-block:: console
 
-   solo@falcon ~/project $ . ./.venv/bin/acticate
+   solo@falcon ~/project $ . ./.venv/bin/activate
    (.venv) solo@falcon ~/project $ pip install -r requirements/backend.in
    Collecting fastapi
    ...
