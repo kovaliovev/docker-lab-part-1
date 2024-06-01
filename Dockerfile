@@ -2,13 +2,17 @@ FROM python
 
 WORKDIR /docker-lab-part-1/
 
-COPY . .
+COPY ./requirements ./requirements
 
 RUN python -m venv ./.venv
 
 RUN . ./.venv/bin/activate
 
 RUN pip install -r requirements/requirements.txt
+
+COPY ./build ./build
+
+COPY ./spaceship ./spaceship
 
 EXPOSE 8080
 
